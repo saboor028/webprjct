@@ -1,0 +1,110 @@
+.sec1, .sec2, .sec3{
+    display: flex;
+    width: 100%;
+    height:300%;
+    margin-top: 2%;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #fff;
+	box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+}
+.sec3{
+    margin-bottom: -210px;
+}
+.left1{
+    padding: 25px 40px;
+    height: 100%;
+}
+.right1{
+    background: url("sec1.jpg") no-repeat center;
+	background-size: cover;
+    height: 90%;
+    background-position: center;
+}
+.left2{
+    background: url("sec2.jpg") no-repeat center;
+	background-size: cover;
+    height: 90%;
+    background-position: center;
+}
+.right2{
+    padding: 25px 40px;
+    height: 100%;
+}
+.left3{
+    padding: 25px 40px;
+    height: 100%;
+}
+.right3{
+    background: url("sec3.jpg") no-repeat center;
+	background-size: cover;
+    height: 90%;
+    background-position: center;
+}
+h3{
+	position: relative;
+	padding: 0 0 10px;
+	margin-bottom: 10px;
+}
+h6{
+    text-decoration: underline;
+}
+.counter{
+    background: url("bg3.webp") no-repeat;
+    min-height: 50vh;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 0 50px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 1%;
+}
+.counter-sec{
+    margin:10% auto;
+    color: white;
+  }
+.iconbox{
+    border:1px solid  white;
+    height:100px;
+    width:100px; 
+    margin: 20px auto;
+    transform: rotate(45deg);}
+.icon-box .fa{
+    font-size: 40px;
+    margin:25px auto;
+    color: #ffc800;
+    transform: rotate(-45deg);
+}
+.counter-box p{
+  font-size: 20px;
+}
+.counter-box .counter1{
+  font-size: 80px;
+  }
+/*.modal-content{
+    background-repeat: no-repeat;
+    height: 100%;
+    margin-top: 10%;
+    text-align: center;
+    justify-content: center;
+    width: 50%;
+}
+.modal-footer{
+    height: 100%;
+    text-align: center;
+}*/
+#end{
+    width: 100%; 
+    margin-top:-100px;
+    min-height: 8vh;
+    position:relative;
+    left: 0;
+    bottom: -200px;
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+}

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <!-- Bootstrap CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+     crossorigin="anonymous"></script>
+     <!--Boxicons-->
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+     <!--Fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="fcontact.css">
+    <script src="contact.js"></script>
+</head>
+<body>
+     <!--Navbar-->
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+              <img src="logo5.png" alt="" width="90" height="40" class="d-inline-block align-text-top">
+              ANYWHERE
+            </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="f1.html">Home</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Tour
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="add-new.php">Crud form</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="newspaper.html">NewsPaper</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="fabout.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="fcontact.html">Contact</a>
+                  </li>
+              </ul>
+              <!-- MODAL-->
+               <!-- Button trigger modal -->
+              <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#exampleModal" style="margin-top: 3px;">
+                  Account
+              </button>
+
+               <!-- Modal -->
+              <div class="modal fade" id="exampleModal" >
+                  <div class="modal-dialog">
+                      <div class="modal-content">
+                          <div class="modal-footer">
+                              <p>if you have already account
+                              <button type="menu" class="btn btn-outline-light"><a href="flogin.html">Login</a></button></p>
+                              <p>if you don't have account
+                              <button type="menu" class="btn btn-outline-light"><a href="fsignup.html">Signup</a></button></p>
+                          </div>
+                      </div>    
+                  </div>
+              </div> 
+
+          </div>
+      </div>
+</nav>
+
+    <div class="sec1">
+        <div class="container">
+            <div class="contact-box" style="margin-top:3%;">
+                <div class="left">
+                  <div class="social-media">
+                      <a class="icons" href="#">
+                        <i class='bx bxl-linkedin-square'></i>
+                      </a>
+                      <a class="icons" href="#">
+                        <i class='bx bx-mail-send'></i>
+                      </a>
+                  </div>                  
+                </div>
+                <div class="right">
+                    <h2>Get in Touch</h2> <br>
+                    <div id="errorMsg">Contact us if you have any query.</div> <br>
+                    <h4>Contact Us</h4>
+                    <form action="fcontact.php" class="contact" name="contact"  onsubmit="return validateContactForm()" method="POST">
+                    <input type="text" name="Name" placeholder="Name" class="field" id="cname" style="height:5%; width:100%;">
+                    <input type="email" name="Email" placeholder="Your Email" class="field" id="cemail"  style="height:5%; width:100%; margin-top:-10px;">
+                    <textarea name="message" placeholder="Message" class="field" id="cmsg" ></textarea>
+                    <input type="submit" value="Send">
+                    <!--<button class="button" type="submit">Send</button>--></form>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <div class="sec2">
+        <div class="for-guide">
+            <div id="google-map" style="margin-top:3%;">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3403.188129237948!2d74.44005497457015!3d31.464010649926248!2m3!
+                1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391908dd6138ade3%3A0xa6cc469044e1fbc1!2sLahore%20Garrison%20University.
+                !5e0!3m2!1sen!2s!4v1686386970198!5m2!1sen!2s" width="100%" height="450" style="border:0;" allowfullscreen="" 
+                loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>        
+        </div>
+    </div>
+
+    <div class="container-2 my-5" id="end">
+
+        <footer class="bg-dark text-center text-lg-start text-white">
+          <!-- Grid container -->
+          <div class="container p-4">
+            <!--Grid row-->
+            <div class="row my-4">
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+      
+                <div class="rounded-circle bg-white shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto" style="width: 150px; height: 150px;">
+                  <img src="logo5.png" height="70" alt=""
+                       loading="lazy" />
+                </div>
+      
+                <p class="text-center">Hotels are taking luxury to new levels.</p>
+      
+                <ul class="list-unstyled d-flex flex-row justify-content-center">
+                  <li>
+                    <a class="icons" href="#">
+                        <i class='bx bxl-facebook-square' ></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="icons" href="#">
+                        <i class='bx bxl-instagram' ></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="icons" href="#">
+                        <i class='bx bxl-github' ></i>
+                    </a>
+                  </li>
+                </ul>
+      
+              </div>
+              <!--Grid column-->
+      
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase mb-4">Features</h5>
+      
+                <ul class="list-unstyled">
+                  <li class="mb-2">
+                    <a href="#!" class="text-white">Home</a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="#!" class="text-white">Tour</a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="#!" class="text-white">contact</a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="#!" class="text-white">About</a>
+                  </li>
+                </ul>
+              </div>
+              <!--Grid column-->
+      
+              
+      
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase mb-4">Contact</h5>
+      
+                <ul class="list-unstyled">
+                  <li>
+                    <p><a href="" class="icons"><i class='bx bxs-location-plus'></i></a>Warsaw, 57 Street, Poland</p>
+                  </li>
+                  <li>
+                    <p><a href="" class="icons"><i class='bx bxs-phone-call'></i></a></box-icon>+ 01 234 567 89</p>
+                  </li>
+                  <li>
+                    <p><a href="" class="icons"><i class='bx bxs-envelope' ></i></a></box-icon>contact@example.com</p>
+                  </li>
+                </ul>
+              </div>
+              <!--Grid column-->
+            </div>
+            <!--Grid row-->
+          </div>
+          <!-- Grid container -->
+      
+          <!-- Copyright -->
+          <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)" >
+            © 2020 Copyright:
+            <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+          </div>
+          <!-- Copyright -->
+        </footer>
+      
+    </div>
+</body>
+</html>
+
